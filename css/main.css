@@ -1,17 +1,19 @@
-/**
-Div style horizontally and vertically centered
- */
-
-div.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body, html {
+  margin: 0;
+  overflow: hidden;
 }
 
-img.pat {
+div#pat {
+  background-image: url(/img/pat1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
   max-width: 100%;
-  height: auto;
-  cursor: pointer;
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+
+div#pat:active {
+  background-image: url("/img/pat2.png");
 }
